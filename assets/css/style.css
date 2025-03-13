@@ -79,11 +79,11 @@
 /*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #F41E1E;
-  --title-color: #1C1C1C;
+  --title-color: #fff;
   --body-color: #7B7E86;
   --smoke-color: #F3F3F3;
   --smoke-color2: #F6F6F7;
-  --smoke-color3: #F5F5F6;
+  --smoke-color3: #000;
   --smoke-color4: #F4F4F4;
   --smoke-color5: #F0F2F4;
   --black-color: #202020;
@@ -99,8 +99,8 @@
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
   --container-gutters: 24px;
-  --section-space: 120px;
-  --section-space-mobile: 80px;
+  --section-space: 320px;
+  --section-space-mobile: 300px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
 }
@@ -706,6 +706,7 @@ ul.wp-block-rss a {
 .wp-block-table.is-style-stripes {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  
 }
 
 .wp-block-table.is-style-stripes {
@@ -1137,7 +1138,7 @@ input {
   font-family: var(--body-font);
   transition: 0.4s ease-in-out;
   padding-right: 45px;
-  border-radius: 5px;
+  border-radius: 35px;
 }
 select:focus,
 .single-select:focus,
@@ -1243,7 +1244,8 @@ select.style-white,
 .form-select.style-white,
 textarea.style-white,
 input.style-white {
-  background: var(--white-color);
+  background:  #000;
+  border-color: red;;
 }
 select.style-border,
 .single-select.style-border,
@@ -2192,7 +2194,7 @@ textarea.is-invalid {
   height: var(--btn-size, 46px);
   line-height: var(--btn-size, 46px);
   font-size: var(--btn-font-size, 16px);
-  background-color: var(--theme-color);
+  background-color: #dc3545;
   color: var(--white-color);
   text-align: center;
   border-radius: 6px;
@@ -2663,7 +2665,7 @@ textarea.is-invalid {
   border-radius: 7px;
   display: inline-block;
   background-color: var(--smoke-color4);
-  color: var(--title-color);
+  color:#dc3545;
   text-align: center;
   font-size: 12px;
 }
@@ -2830,7 +2832,7 @@ textarea.is-invalid {
 }
 
 .bg-smoke2 {
-  background-color: var(--smoke-color2) !important;
+  background-color: #000 !important;
 }
 
 .bg-smoke3 {
@@ -4627,7 +4629,7 @@ ul.wp-block-latest-posts li:last-child {
   display: inline-block;
   font-size: 1em;
   line-height: 1;
-  color: var(--title-color);
+  color: #fff;
   font-weight: 500;
 }
 .main-menu ul.sub-menu li ul.sub-menu {
@@ -4648,7 +4650,7 @@ ul.wp-block-latest-posts li:last-child {
   position: relative;
   font-weight: 500;
   font-size: 16px;
-  color: var(--title-color);
+  color: #fff;
   text-transform: uppercase;
 }
 .main-menu a:hover {
@@ -5198,7 +5200,7 @@ ul.wp-block-latest-posts li:last-child {
 }
 .header-layout3 .sticky-wrapper2 {
   padding: 0px 108px 0;
-  background: var(--smoke-color);
+  background: #dc3545;
   border-bottom: 1px solid var(--title-color);
   position: absolute;
   right: 0;
@@ -5378,7 +5380,7 @@ ul.wp-block-latest-posts li:last-child {
 /*------------------- 4.3. Footer  -------------------*/
 .copyright-wrap {
   padding: 26px 0;
-  background: #282828;
+  background: #000;
 }
 
 .widget-area {
@@ -5399,7 +5401,7 @@ ul.wp-block-latest-posts li:last-child {
 
 .footer-layout1 {
   position: relative;
-  background-color: var(--title-color);
+  background-color: #dc3545;
 }
 
 /* Medium devices */
@@ -7007,7 +7009,7 @@ li.trackback {
 }
 /* Hero 3 ---------------------------------- */
 .hero-3 {
-  padding: 198px 0;
+  padding: 320px 0;
 }
 .hero-3:after {
   content: "";
@@ -8792,8 +8794,8 @@ span.select2-selection.select2-selection--single:focus {
   object-fit: cover;
 }
 .contact-form-area .contact-form-wrap {
-  padding: 80px 80px 80px 60px;
-}
+/*   padding: 80px 80px 80px 60px;
+ */}
 
 /* Medium Large devices */
 @media (max-width: 1399px) {
@@ -11417,8 +11419,8 @@ span.select2-selection.select2-selection--single:focus {
   top: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(262.57deg, rgba(28, 28, 28, 0.99) 34.91%, rgba(28, 28, 28, 0) 81.55%);
-  opacity: 0.8;
+  background: linear-gradient(262.57deg, #dc3545 34.91%, rgba(28, 28, 28, 0) 81.55%);
+  opacity: 2.8;
   z-index: -1;
 }
 
@@ -14658,3 +14660,4 @@ span.select2-selection.select2-selection--single:focus {
     padding-top: 65px;
   }
 }
+
