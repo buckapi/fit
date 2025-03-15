@@ -249,8 +249,8 @@ p:empty {
 p {
   font-family: var(--body-font);
   margin: 0 0 18px 0;
-  color: var(--body-color);
-  line-height: 1.75;
+  color: #fff;
+  line-height: 1.5;
 }
 
 h1 a,
@@ -295,7 +295,7 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 48px;
+  font-size: 80px;
   line-height: 1.227;
 }
 
@@ -1006,6 +1006,10 @@ ul.wp-block-rss a {
   }
   .container2 {
     max-width: 1330px;
+  }
+  .container.top{
+    margin-top:30%; 
+    margin-bottom: 10%;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -2449,7 +2453,7 @@ textarea.is-invalid {
   margin-bottom: calc(var(--section-title-space) - 43px);
   margin-top: -0.23em;
   font-weight: 500;
-  line-height: 58px;
+  line-height: 60px;
 }
 
 .sub-title {
@@ -2592,12 +2596,12 @@ textarea.is-invalid {
 /* Small devices */
 @media (max-width: 767px) {
   .sec-title {
-    font-size: 34px;
+    font-size: 50px;
   }
 }
 @media (max-width: 390px) {
   .sec-title {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 /*------------------- 3.4. Common -------------------*/
@@ -5201,7 +5205,7 @@ ul.wp-block-latest-posts li:last-child {
 .header-layout3 .sticky-wrapper2 {
   padding: 0px 108px 0;
   background: #dc3545;
-  border-bottom: 1px solid var(--title-color);
+  /* border-bottom: 1px solid var(--title-color); */
   position: absolute;
   right: 0;
   left: 0;
@@ -7018,7 +7022,7 @@ li.trackback {
   top: 0;
   bottom: 0;
   right: 0;
-  background: #1C1C1C;
+  background: #1c1c1c47;
   mix-blend-mode: hard-light;
 }
 
@@ -8817,6 +8821,7 @@ span.select2-selection.select2-selection--single:focus {
   .contact-form-area .contact-form-thumb {
     border-radius: 15px 15px 0 0;
     height: auto;
+    text-align: center;
   }
   .contact-form-area .contact-form-thumb img {
     width: 100%;
@@ -10312,7 +10317,7 @@ span.select2-selection.select2-selection--single:focus {
 /*------------------- 4.00. Blog  -------------------*/
 /* Blog Card ---------------------------------- */
 .blog-card {
-  background: var(--title-color);
+ /*  background: var(--title-color); */
   position: relative;
   border-radius: 15px;
 }
@@ -10445,12 +10450,12 @@ span.select2-selection.select2-selection--single:focus {
 }
 .blog-card.style3 {
   display: flex;
-  padding: 40px;
+  padding: 10px;
   border-radius: 0;
   gap: 30px;
 }
 .blog-card.style3 ~ .blog-card.style3 {
-  margin-top: 20px;
+ /*  margin-top: 20px; */
 }
 .blog-card.style3 .blog-date {
   border: 1px solid #313131;
@@ -10476,8 +10481,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 .blog-card.style3 .blog-category {
   color: var(--theme-color);
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   font-family: var(--body-font);
   text-transform: uppercase;
   margin-top: -0.5em;
@@ -10745,7 +10750,7 @@ span.select2-selection.select2-selection--single:focus {
   object-fit: cover;
 }
 .img-half.img-right {
-  right: 0;
+  left: 0;
 }
 
 .icon-box {
@@ -11784,11 +11789,19 @@ span.select2-selection.select2-selection--single:focus {
   .sec-shape2-bottom {
     margin-bottom: -82px;
   }
+  .container.top{
+    margin-top:30%; 
+    margin-bottom: 10%;
+  }
 }
 /* Medium Large devices */
 @media (max-width: 1299px) {
   .sec-shape2-bottom {
     margin-bottom: -73px;
+  }
+  .container.top{
+    margin-top:30%; 
+    margin-bottom: 10%;
   }
 }
 /* Large devices */
@@ -11796,17 +11809,30 @@ span.select2-selection.select2-selection--single:focus {
   .sec-shape2-bottom {
     margin-bottom: -62px;
   }
+  .container.top{
+    margin-top:30%; 
+    margin-bottom: 10%;
+  }
 }
 /* Medium devices */
 @media (max-width: 991px) {
   .sec-shape2-bottom {
     margin-bottom: -47px;
   }
+  .container.top{
+    margin-top:45%; 
+    margin-bottom: 10%;
+  }
 }
+
 /* Small devices */
 @media (max-width: 767px) {
   .sec-shape2-bottom {
     margin-bottom: -36px;
+  }
+  .container.top{
+    margin-top: 80%;
+    margin-bottom: 10%;
   }
 }
 /* Extra small devices */
@@ -14660,4 +14686,3 @@ span.select2-selection.select2-selection--single:focus {
     padding-top: 65px;
   }
 }
-
