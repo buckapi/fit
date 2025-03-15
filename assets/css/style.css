@@ -78,7 +78,7 @@
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #F41E1E;
+  --theme-color: #e2383f;
   --title-color: #fff;
   --body-color: #7B7E86;
   --smoke-color: #F3F3F3;
@@ -11483,7 +11483,7 @@ span.select2-selection.select2-selection--single:focus {
   background-size: 100% 2px;
 }
 .service-card_text {
-  font-size: 14px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 .service-card .link-btn {
@@ -14684,5 +14684,28 @@ span.select2-selection.select2-selection--single:focus {
   }
   .pt-105 {
     padding-top: 65px;
+  }
+}
+
+.TWO {
+  font-size: 70px;
+}
+.h2 .titlebot{
+  font-size: 50px;
+  color: #e2383f !important;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .TWO {
+    font-size: 40px;
+  }
+  .service-card_text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .titlebot{
+    font-size: 30px;
+    color: #e2383f !important;
   }
 }
