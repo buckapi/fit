@@ -95,13 +95,14 @@
   --error-color: #dc3545;
   --border-color: #E3E3E3;
   --title-font: "Kanit", sans-serif;
+  --title-font2:"ERODEDPERSONALUSE", sans-serif;
   --body-font: "Kumbh Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
   --container-gutters: 24px;
-  --section-space: 320px;
+  --section-space: 300px;
   --section-space-mobile: 300px;
-  --section-title-space: 60px;
+  --section-title-space: 80px;
   --ripple-ani-duration: 5s;
 }
 
@@ -279,7 +280,7 @@ h4,
 h5,
 .h6,
 h6 {
-  font-family: var(--title-font);
+  font-family: var(--title-font2);
   color: var(--title-color);
   text-transform: none;
   font-weight: 700;
@@ -295,7 +296,7 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 80px;
+  font-size: 180px;
   line-height: 1.227;
 }
 
@@ -2451,9 +2452,9 @@ textarea.is-invalid {
 /*------------------- 3.3. Titles -------------------*/
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 43px);
-  margin-top: -0.23em;
+ /*  margin-top: -0.23em; */
   font-weight: 500;
-  line-height: 60px;
+  line-height: 100px;
 }
 
 .sub-title {
@@ -2799,7 +2800,7 @@ textarea.is-invalid {
 }
 
 .fw-semibold {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 .fw-bold {
@@ -4220,7 +4221,7 @@ ul.wp-block-latest-posts li:last-child {
   bottom: -15px;
   height: 3px;
   width: 41px;
-  background: #D9D9D9;
+/*   background: #D9D9D9; */
 }
 .footer-widget.widget_meta ul, .footer-widget.widget_pages ul, .footer-widget.widget_archive ul, .footer-widget.widget_recent_entries ul, .footer-widget.widget_categories ul, .footer-widget.widget_nav_menu ul {
   margin-top: -5px;
@@ -4505,9 +4506,14 @@ ul.wp-block-latest-posts li:last-child {
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--white-color);
+  background-color: #dc3545;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
   animation: stickyAni 0.4s ease-in-out;
+}
+@media (max-width: 768px) {
+  .sticky-wrapper.sticky {
+    background: #fff;
+  }
 }
 
 @keyframes stickyAni {
@@ -5197,11 +5203,15 @@ ul.wp-block-latest-posts li:last-child {
 @media (max-width: 575px) {
   .header-layout2 .sticky-wrapper {
     padding: 0;
+    background: #dc3545;
+
   }
 }
 /* Header 3 ---------------------------------- */
 .header-layout3 {
-  height: 120px;
+  height: 70px;
+  background: #dc3545;
+
 }
 .header-layout3 .sticky-wrapper2 {
   padding: 0px 108px 0;
@@ -5210,6 +5220,11 @@ ul.wp-block-latest-posts li:last-child {
   position: absolute;
   right: 0;
   left: 0;
+}
+@media (max-width: 768px) {
+  .header-layout3 .sticky-wrapper2 {
+    background: #fff;
+  }
 }
 .header-layout3 .sticky-wrapper2.sticky {
   position: fixed;
@@ -6798,17 +6813,17 @@ li.trackback {
 }
 
 .hero-title {
-  font-size: 80px;
+  font-size: 120px;
   line-height: 87px;
   margin-bottom: 0;
   color: var(--title-color);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.02em;
 }
-.hero-title span {
+/* .hero-title span {
   color: transparent;
   -webkit-text-stroke: 2px var(--white-color);
-}
+} */
 
 .hero-text {
   font-size: 20px;
@@ -7015,7 +7030,7 @@ li.trackback {
 }
 /* Hero 3 ---------------------------------- */
 .hero-3 {
-  padding: 320px 0;
+  padding: 90px 0;
 }
 .hero-3:after {
   content: "";
@@ -7091,7 +7106,7 @@ li.trackback {
 /* Extra small devices */
 @media (max-width: 575px) {
   .hero-style3 .hero-title {
-    font-size: 46px;
+    font-size: 56px;
   }
   .appointment-form {
     padding: 40px;
@@ -14691,6 +14706,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .TWO {
   font-size: 70px;
+  font-weight: bolder;
 }
 .h2 .titlebot{
   font-size: 50px;
@@ -14725,3 +14741,22 @@ ul li.active a {
   background-color: #000; 
   border-radius: 5px; 
 }
+
+.fa-avenir {
+  font-family: 'Avenir', sans-serif;
+}
+
+.title-font2 {
+  font-family: 'ERODEDPERSONALUSE', sans-serif; /* Asegúrate de tener esta fuente importada */
+  font-weight: bold; /* Puedes ajustar el peso si lo necesitas */
+}
+
+@media (max-width: 767px) {
+  .img-ban {
+    width: 80%;
+    text-align: center;
+
+  }
+}
+
+
