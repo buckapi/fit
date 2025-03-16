@@ -4210,8 +4210,8 @@ ul.wp-block-latest-posts li:last-child {
   max-width: 270px;
   color: var(--white-color);
   border-bottom: none;
-  margin: -0.04em 0 50px 0;
-  font-size: 22px;
+/*   margin: -0.04em 0 50px 0;
+ */  font-size: 22px;
   font-weight: 500;
   position: relative;
 }
@@ -9779,7 +9779,7 @@ span.select2-selection.select2-selection--single:focus {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 0 30px 30px 0;
+  /* border-radius: 0 30px 30px 0; */
   z-index: -1;
   min-height: 784px;
 }
@@ -14789,4 +14789,29 @@ ul li.active a {
   }
 }
 
+.white-background {
+  background-color: white;
+  padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.red-background {
+  background-color: red;
+  padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.footer-wrapper .container {
+  padding: 0;
+}
+
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.widget-nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
