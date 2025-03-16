@@ -94,8 +94,9 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #E3E3E3;
-  --title-font: "Kanit", sans-serif;
+  --title-font: "Avenir", sans-serif;
   --title-font2:"ERODEDPERSONALUSE", sans-serif;
+  --body-font2:"AvenirNext", sans-serif;
   --body-font: "Kumbh Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
@@ -252,6 +253,7 @@ p {
   margin: 0 0 18px 0;
   color: #fff;
   line-height: 1.5;
+  text-align: justify;
 }
 
 h1 a,
@@ -6820,6 +6822,24 @@ li.trackback {
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+.hero-title2 {
+  font-size: 250px;
+  line-height: 87px;
+  margin-bottom: 0;
+  color: var(--title-color);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 767px) {
+  .hero-title2 {
+    font-size: 100px;
+    line-height: 87px;
+    margin-bottom: 0;
+    color: var(--title-color);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
 /* .hero-title span {
   color: transparent;
   -webkit-text-stroke: 2px var(--white-color);
@@ -10760,6 +10780,16 @@ span.select2-selection.select2-selection--single:focus {
   width: 50%;
   height: 100%;
   z-index: -1;
+}
+@media (max-width: 767px) {
+  .img-half {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.20;
+  }
 }
 .img-half img {
   width: 100%;

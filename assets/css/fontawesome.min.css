@@ -11846,11 +11846,11 @@
 }
 
 @font-face {
-    font-family: 'Avenir Next';
+    font-family: 'AvenirNext';
     src: url('../fonts/fontawesome/AvenirNext.ttc') format('truetype');
 }
 .fa-avenir-next {
-    font-family: 'Avenir Next';
+    font-family: 'AvenirNext';
 }
 
 @font-face {
