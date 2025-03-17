@@ -2201,8 +2201,8 @@ textarea.is-invalid {
   height: var(--btn-size, 46px);
   line-height: var(--btn-size, 46px);
   font-size: var(--btn-font-size, 16px);
-  background-color: #dc3545;
-  color: var(--white-color);
+  background-color: #fff;
+  color: #dc3545;
   text-align: center;
   border-radius: 6px;
   border: none;
@@ -4516,7 +4516,7 @@ ul.wp-block-latest-posts li:last-child {
 }
 @media (max-width: 768px) {
   .sticky-wrapper.sticky {
-    background: #fff;
+    background: #dc3545;
   }
 }
 
@@ -9788,7 +9788,7 @@ span.select2-selection.select2-selection--single:focus {
   min-height: 784px;
 }
 .testimonial-bg-thumb1 .thumb img {
-  border-radius: 0 30px 30px 0;
+  border-radius: 0px;
 }
 
 .testi-box-wrap1 {
@@ -14928,4 +14928,18 @@ ul li.active a {
   }
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 86px;
+  right: 26px;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
 
+.whatsapp-button img {
+  width: 40px; /* Size of the WhatsApp icon */
+  height: 40px; /* Size of the WhatsApp icon */
+}
