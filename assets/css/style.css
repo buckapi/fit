@@ -14943,3 +14943,44 @@ ul li.active a {
   width: 40px; /* Size of the WhatsApp icon */
   height: 40px; /* Size of the WhatsApp icon */
 }
+
+.image-item {
+  position: relative; /* Positioning context for the overlay */
+  text-align: center; /* Center-align text */
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 10px; /* Position content at the bottom of the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.learn-more {
+  margin-top: 10px; /* Space above the button */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #dc3545; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.learn-more:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .overlay-title {
+      font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .learn-more {
+      padding: 8px 16px; /* Adjust button padding for mobile */
+  }
+}
