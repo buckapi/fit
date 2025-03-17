@@ -117,7 +117,7 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: 400;
-  color: var(--body-color);
+  color: #fff;
   line-height: 26px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -394,7 +394,7 @@ h6 {
 @media (max-width: 575px) {
   .h1,
   h1 {
-    font-size: 34px;
+    font-size: 50px;
     line-height: 1.35;
   }
   .h2,
@@ -2599,12 +2599,14 @@ textarea.is-invalid {
 /* Small devices */
 @media (max-width: 767px) {
   .sec-title {
-    font-size: 50px;
+    font-size: 80px;
+    --section-title-space: 25px;
+
   }
 }
 @media (max-width: 390px) {
   .sec-title {
-    font-size: 60px;
+    font-size: 80px;
   }
 }
 /*------------------- 3.4. Common -------------------*/
@@ -4243,7 +4245,7 @@ ul.wp-block-latest-posts li:last-child {
   padding: 0 0 0 23px;
   margin-bottom: 16px;
   font-family: var(--body-font);
-  color: var(--body-color);
+  color: #FFF;
   display: block;
   max-width: 100%;
   width: max-content;
@@ -5430,7 +5432,7 @@ ul.wp-block-latest-posts li:last-child {
 /* Medium devices */
 @media (max-width: 991px) {
   .widget-area {
-    padding: 60px 0 30px;
+    padding: 60px 18px 33px;
   }
 }
 /*------------------- 4.4. Breadcumb  -------------------*/
@@ -6890,8 +6892,9 @@ li.trackback {
 /* Extra small devices */
 @media (max-width: 575px) {
   .hero-title {
-    font-size: 56px;
+    font-size: 80px;
     line-height: 67px;
+    padding-bottom: 0px;
   }
   .hero-style1 {
     padding: 120px 0 185px 0px;
@@ -7126,7 +7129,7 @@ li.trackback {
 /* Extra small devices */
 @media (max-width: 575px) {
   .hero-style3 .hero-title {
-    font-size: 56px;
+    font-size: 80px;
   }
   .appointment-form {
     padding: 40px;
@@ -8859,6 +8862,7 @@ span.select2-selection.select2-selection--single:focus {
     border-radius: 15px 15px 0 0;
     height: auto;
     text-align: center;
+    padding-top: 0%;
   }
   .contact-form-area .contact-form-thumb img {
     width: 100%;
@@ -10637,7 +10641,7 @@ span.select2-selection.select2-selection--single:focus {
     padding: 25px;
   }
   .blog-card.style3 {
-    padding: 30px;
+    padding: 5px;
   }
 }
 /* Extra small devices */
@@ -14787,7 +14791,15 @@ ul li.active a {
     text-align: center;
 
   }
+  .limite{text-align: center; padding-top: 10px;}
 }
+
+.img-ban{
+  width: 30%;
+  text-align: center;
+}
+
+.limite{text-align: end; padding-top: 40px;}
 
 .white-background {
   background-color: white;
@@ -14814,4 +14826,106 @@ ul li.active a {
   flex-direction: column;
   justify-content: center;
 }
+
+.espaciado {padding-bottom: 10px;}
+
+.H1PRO {
+  padding-bottom: 20px; font-size: 90px; font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .H1PRO {
+    font-size: 70px;
+  }
+}
+.title-area h1 {
+  font-size: 90px; /* Default for desktop */
+  padding-bottom: 20px; /* Default for desktop */
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .title-area h1 {
+      font-size: 50px; /* Smaller font size for mobile */
+      padding-bottom: 0px; /* Less padding for mobile */
+      line-height: 0.8;
+  }
+
+  .text-boot{
+    font-size: 80px;
+  }
+}
+
+.title-area .hero-title2 {
+  font-size: 200px; /* Default for desktop */
+  text-align: center;
+    color: #dc3545;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .title-area .hero-title2 {
+      font-size: 80px; /* Smaller font size for mobile */
+      padding: 10% 0 10%;
+  }
+}
+
+.titlebot {
+  font-size: 50px; /* Default for desktop */
+  line-height: 1.227;
+  font-weight: 500;
+  color: #dc3545;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .titlebot {
+      font-size: 30px; /* Smaller font size for mobile */
+  }
+}
+.nutrition-text {
+  font-size: 25px; /* Default for desktop */
+  text-align: initial;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .nutrition-text {
+      font-size: 20px; /* Smaller font size for mobile */
+  }
+}
+.title-incluye {
+  font-size: 50px; /* Default for desktop */
+  line-height: 1.227;
+  font-weight: 500;
+  color: #dc3545;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .title-incluye {
+      font-size: 30px; /* Smaller font size for mobile */
+  }
+}
+
+.title-transform {
+  font-size: 50px; /* Default for desktop */
+  line-height: 1.227;
+  font-weight: 400;
+  color: #dc3545;
+  text-align: center;
+}
+
+.title-next-step {
+  font-size: 50px; /* Default for desktop */
+  line-height: 1.227;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .title-transform,
+  .title-next-step {
+      font-size: 30px; /* Smaller font size for mobile */
+  }
+}
+
 
