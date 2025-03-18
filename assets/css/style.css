@@ -1015,6 +1015,12 @@ ul.wp-block-rss a {
     margin-bottom: 10%;
   }
 }
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      /* max-width: calc(var(--main-container) + var(--container-gutters)); */
+      max-width: 1600px !important;
+  }
+}
 @media only screen and (min-width: 1300px) {
   .container2.px-0,
   .container-xxl.px-0,
@@ -14944,43 +14950,589 @@ ul li.active a {
   height: 40px; /* Size of the WhatsApp icon */
 }
 
+.hero-section {
+  padding-top: 45px; 
+  padding-bottom: 10%; 
+  text-align: center; 
+  background-image: url('../img/verticalShapeResi.png') !important; 
+  background-repeat: no-repeat !important; 
+  background-size: auto; 
+  background-position: center; 
+  position: relative; 
+  overflow: hidden; 
+}
+@media (max-width: 768px) { /* Mobile styles */
+.hero-section {
+  padding-top: 45px; 
+  padding-bottom: 10%; 
+  text-align: center; 
+  background-image: url('../img/verticalShapeResiMobile.png') !important; 
+  background-repeat: no-repeat !important; 
+  background-size: auto; 
+  background-position: center; 
+  position: relative; 
+  overflow: hidden; 
+}
+  
+}
+
+.contact-modified-desktop {
+  display: block; /* Show on desktop */
+}
+
+.contact-modified-mobile {
+  display: none; /* Hide on desktop */
+}
+
+@media (max-width: 768px) {
+  .contact-modified-desktop {
+      display: none; /* Hide on mobile */
+  }
+
+  .contact-modified-mobile {
+      display: block; /* Show on mobile */
+  }
+}
+
+.background-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.middle-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.middle-img {
+  width: 50%; /* Ajustar al 50% de la pantalla */
+  object-fit: scale-down;
+  height: auto;
+}
+
+.hero-content {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 3;
+}
+
+.text-overlay h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.text-overlay button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.text-overlay button:hover {
+  background-color: darkred;
+}
+
+/* Estilos específicos para la columna izquierda */
+.left-text {
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.left-text h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.left-text .fa-avenir-next {
+  font-size: 3rem;
+}
+
+.left-text h2 span {
+  font-size: 50px;
+}
+
+/* Estilos específicos para la columna derecha */
+.right-text {
+  right: 10%;
+  transform: translate(0, -50%);
+}
+
+.right-text h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right-text .fa-avenir-next {
+  font-size: 3rem;
+}
+
+.right-text h2 span {
+  font-size: 50px;
+}
+
+.bg-image {
+  position: relative;
+}
+
+.bg-image.left {
+  z-index: 1;
+}
+
+.bg-image.right {
+  z-index: 1;
+}
+
+/* Overlay con imagen y botones */
 .image-item {
-  position: relative; /* Positioning context for the overlay */
-  text-align: center; /* Center-align text */
+  position: relative;
+  text-align: center;
+}
+.diagonal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+  padding-left: 30%; /* Aplica un padding en la parte izquierda */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); /* Corta la parte inferior de forma diagonal */
 }
 
 .overlay-content {
   position: absolute;
-  bottom: 10px; /* Position content at the bottom of the image */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  color: white; /* Text color */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 10px; /* Padding around the text */
-  border-radius: 5px; /* Optional: rounded corners */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .learn-more {
-  margin-top: 10px; /* Space above the button */
-  padding: 10px 20px; /* Padding for the button */
-  background-color: #dc3545; /* Button color */
-  color: white; /* Button text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .learn-more:hover {
-  background-color: #c82333; /* Darker shade on hover */
+  background-color: #c82333;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .overlay-title {
-      font-size: 24px; /* Smaller font size for mobile */
+  .left-text h2,
+  .right-text h2 {
+      font-size: 1rem; /* Reduce font size for mobile */
+  }
+
+  .text-overlay h2 {
+      font-size: 1rem;
   }
 
   .learn-more {
       padding: 8px 16px; /* Adjust button padding for mobile */
   }
+
+  .middle-img {
+      height: 150px; /* Reduce height of the middle image */
+  }
+
+  .hero-content {
+      padding: 0 10px; /* Add some padding for smaller screens */
+  }
 }
+
+@media (max-width: 576px) {
+  .left-text h2,
+  .right-text h2 {
+      font-size: 1rem; /* Further reduce font size on very small screens */
+  }
+
+  .text-overlay h2 {
+      font-size: 1rem;
+  }
+
+  .middle-img {
+      height: 120px; /* Further reduce height of the middle image */
+  }
+
+  .learn-more {
+      padding: 6px 12px; /* Further reduce button padding for mobile */
+  }
+}
+/* In your style.css file */
+.desktop-only {
+  display: block; /* Show on desktop */
+}
+
+.mobile-only {
+  display: none; /* Hide on desktop */
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+      display: none; /* Hide on mobile */
+  }
+
+  .mobile-only {
+      display: block; /* Show on mobile */
+  }
+}
+
+/* Contenedor principal (ya lo tienes) */
+
+
+/* Clase base para las imágenes flotantes */
+.floating-image {
+  width: 150px; /* Ancho de la imagen */
+  position: absolute; /* Posicionamiento absoluto */
+  z-index: 10; /* Asegura que las imágenes estén por encima de otros elementos */
+}
+.floating-image2 {
+  width: 50px; /* Ancho de la imagen */
+  position: absolute; /* Posicionamiento absoluto */
+  z-index: 10; /* Asegura que las imágenes estén por encima de otros elementos */
+}
+
+/* Posiciones (sin cambios) */
+.pos-1 {
+  top: 183%;
+  right: 5%;
+}
+
+.pos-2 {
+  top: 0;
+  right: 0;
+}
+
+.pos-3 {
+  top: 421%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado exacto */
+}
+
+.pos-4 {
+  bottom: 0;
+  left: 0;
+}
+.titleM{
+  padding-right: 12%;
+}
+.pos-5 {
+  bottom: 120px;
+  right: 70px;
+}
+
+
+.pos-6 {
+  top: 20%;
+  right: 10%;
+}
+
+.pos-7 {
+  top: 577%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.pos-5-rut {
+  top: 24%;
+  right: 24px;
+}
+
+.pos-8-rut {
+  top: 78%;
+    right: 28%;
+    width: 8%;
+}
+.pos-9-rut {
+  top: 219%;
+  right: 31%;
+  width: 8%;
+}
+.pos-9-1-rut {
+  top: 219%;
+  right: 28%;
+  width: 8%;
+}
+.pos-10-rut {
+  top: 351%;
+  right: 9%;
+  width: 8%;
+}
+.pos-3-rut {
+    top: 202%;
+    right: 24px;
+
+}
+
+.pos-4-rut {
+  top: 325%;
+  left: 65%;
+}
+
+.titleR{
+  padding-right: 10%;
+}
+
+/* Estilos para pantallas pequeñas (0px - 480px) */
+@media (max-width: 480px) {
+  .pos-5 {
+    bottom: 40%;
+    left: 50%;
+  }
+  .titleM {
+    padding-right: 10%;
+  }
+  .pos-1 {
+    top: 120%;
+    left: 50%;
+  }
+  .pos-3 {
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pos-7 {
+    display: none;
+  }
+  .titleR {
+    padding-right: 5%;
+  }
+  .pos-5-rut {
+    top: 30%;
+    right: 20px;
+  }
+  .pos-8-rut {
+    top: 60%;
+    right: 50%;
+    width: 18%;
+  }
+  .pos-9-rut {
+    top: 180%;
+    right: 60%;
+    width: 16%;
+  }
+  .pos-9-1-rut {
+    top: 180%;
+    right: 55%;
+    width: 15%;
+  }
+  .pos-10-rut {
+    top: 280%;
+    right: 20%;
+    width: 16%;
+  }
+  .pos-3-rut {
+    top: 170%;
+    right: 20px;
+  }
+  .pos-4-rut {
+    top: 270%;
+    left: 30%;
+  }
+}
+
+/* Estilos para pantallas medianas (481px - 768px) */
+@media (max-width: 768px) {
+  .pos-5 {
+    bottom: 35%;
+    left: 60%;
+  }
+  .titleM {
+    padding-right: 5%;
+  }
+  .pos-1 {
+    top: 150%;
+    left: 63%;
+  }
+  .pos-3 {
+    top: 379%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pos-7 {
+    display: none;
+  }
+  .titleR {
+    padding-right: 5%;
+  }
+  .pos-5-rut {
+    top: 36%;
+    right: 24px;
+  }
+  .pos-8-rut {
+    top: 70%;
+    right: 59%;
+    width: 15%;
+  }
+  .pos-9-rut {
+    top: 207%;
+    right: 63%;
+    width: 14%;
+  }
+  .pos-9-1-rut {
+    top: 207%;
+    right: 58%;
+    width: 14%;
+  }
+  .pos-10-rut {
+    top: 324%;
+    right: 24%;
+    width: 14%;
+  }
+  .pos-3-rut {
+    top: 191%;
+    right: 24px;
+  }
+  .pos-4-rut {
+    top: 307%;
+    left: 35%;
+  }
+}
+
+/* Estilos para pantallas grandes (769px - 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .pos-5 {
+    bottom: 30%;
+    left: 55%;
+  }
+  .titleM {
+    padding-right: 7%;
+  }
+  .pos-1 {
+    top: 140%;
+    left: 60%;
+  }
+  .pos-3 {
+    top: 360%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pos-7 {
+    display: block;
+  }
+  .titleR {
+    padding-right: 10%;
+  }
+  .pos-5-rut {
+    top: 28%;
+    right: 30px;
+  }
+  .pos-8-rut {
+    top: 58%;
+    right: 55%;
+    width: 17%;
+  }
+  .pos-9-rut {
+    top: 200%;
+    right: 60%;
+    width: 15%;
+  }
+  .pos-9-1-rut {
+    top: 200%;
+    right: 50%;
+    width: 15%;
+  }
+  .pos-10-rut {
+    top: 290%;
+    right: 20%;
+    width: 16%;
+  }
+  .pos-3-rut {
+    top: 160%;
+    right: 40px;
+  }
+  .pos-4-rut {
+    top: 250%;
+    left: 40%;
+  }
+}
+
+
+
+/* @media (max-width: 768px) {
+  .pos-5 {
+    bottom: 35%;
+    left: 60%;
+  }
+  .titleM{
+    padding-right: 5%;
+  }
+  .pos-1 {
+    top: 150%;
+    left: 63%;
+  }
+  .pos-3 {
+    top: 379%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  .pos-7 {display: none;}
+  .titleR{
+    padding-right: 5%;
+  }
+  .pos-5-rut {
+    top: 34%;
+    right: 24px;
+  }
+  .pos-8-rut {
+    top: 64%;
+    right: 59%;
+    width: 15%;
+  }
+  .pos-9-rut {
+  top: 190%;
+  right: 65%;
+  width: 14%;
+  }
+    .pos-9-rut {
+    top: 190%;
+    right: 63%;
+    width: 14%;
+    }
+
+    .pos-9-1-rut {
+      top: 190%;
+      right: 58%;
+      width: 14%;
+      }
+    
+    .pos-10-rut {
+      top: 294%;
+        right: 26%;
+        width: 14%;
+    }
+    .pos-3-rut {
+      top: 177%;
+      right: 24px;
+  }
+  .pos-4-rut {
+    top: 278%;
+    left: 35%;
+  }
+} */
+
+
+
