@@ -7077,7 +7077,7 @@ li.trackback {
   z-index: 6;
 }
 .hero-style3 .hero-title {
-  font-size: 80px;
+  font-size: 150px;
   line-height: 90px;
   margin-top: -0.26em;
   margin-bottom: -0.2em;
@@ -14961,6 +14961,17 @@ ul li.active a {
   position: relative; 
   overflow: hidden; 
 }
+.hero-section2 {
+  padding-top: 45px; 
+  padding-bottom: 10%; 
+  text-align: center; 
+  background-image: url('../img/verticalShapeResi.png') !important; 
+  background-repeat: no-repeat !important; 
+  background-position: right;
+  position: relative; 
+  overflow: hidden; 
+}
+
 @media (max-width: 768px) { /* Mobile styles */
 .hero-section {
   padding-top: 45px; 
@@ -14970,6 +14981,17 @@ ul li.active a {
   background-repeat: no-repeat !important; 
   background-size: auto; 
   background-position: center; 
+  position: relative; 
+  overflow: hidden; 
+}
+.hero-section2 {
+  padding-top: 45px; 
+  padding-bottom: 10%; 
+  text-align: center; 
+  background-image: url('../img/verticalShapeResiMobile.png') !important; 
+  background-repeat: no-repeat !important; 
+  background-size: auto; 
+  background-position: right; 
   position: relative; 
   overflow: hidden; 
 }
@@ -15240,8 +15262,8 @@ ul li.active a {
   padding-right: 12%;
 }
 .pos-5 {
-  bottom: 120px;
-  right: 70px;
+  bottom: 27%;
+  right: 58px;
 }
 
 
@@ -15255,40 +15277,77 @@ ul li.active a {
   left: 31%;
   transform: translate(-50%, -50%);
 }
+.pos-7-1 {
+  top: 598%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
 
 .pos-5-rut {
   top: 24%;
   right: 24px;
 }
 
+.pos-5-bot {
+  top: 44%;
+  right: 24px;  
+}
+.pos-5-nut {
+  top: 44%;
+  right: 30%;
+}
+.pos-6-bot {
+  top: 158%;
+  right: 24px;  
+}
+.pos-6-nut {
+  top: 117%;
+  right: 24px;
+}
+
 .pos-8-rut {
-  top: 78%;
+  top: 97%;
     right: 28%;
     width: 8%;
 }
+.pos-8-bot {
+  top: 126%;
+  left: 5%;
+}
+.pos-8-nut {
+  top: 263%;
+  left: 5%;
+}
 .pos-9-rut {
-  top: 219%;
+  top: 238%;
   right: 31%;
   width: 8%;
 }
 .pos-9-1-rut {
-  top: 219%;
+  top:238%;
   right: 28%;
   width: 8%;
 }
 .pos-10-rut {
-  top: 351%;
+  top: 371%;
   right: 9%;
   width: 8%;
 }
 .pos-3-rut {
-    top: 202%;
-    right: 24px;
-
+  top: 219%;
+  right: 20%;
 }
 
 .pos-4-rut {
-  top: 325%;
+  top: 349%;
+  left: 65%;
+}
+.pos-4-bot {
+  top: 300%;
+  left: 65%;
+}
+.pos-6-rut {
+  top: 589%;
   left: 65%;
 }
 
@@ -15379,45 +15438,67 @@ ul li.active a {
     padding-right: 5%;
   }
   .pos-5-rut {
-    top: 36%;
+    top: 40%;
     right: 24px;
   }
   .pos-8-rut {
-    top: 70%;
-    right: 59%;
-    width: 15%;
+    top: 79%;
+    right: 57%;
+    width: 16%;
+  }
+  .pos-8-bot {
+    top: 102%;
+    left: 5%;
+    width: 20%;
+  }
+  .pos-6-nut {
+    top: 119%;
+    left: 79%;
+    width: 20%;
   }
   .pos-9-rut {
-    top: 207%;
+    top: 217%;
     right: 63%;
     width: 14%;
   }
   .pos-9-1-rut {
-    top: 207%;
+    top: 217%;
     right: 58%;
     width: 14%;
   }
   .pos-10-rut {
-    top: 324%;
+    top: 334%;
     right: 24%;
     width: 14%;
   }
   .pos-3-rut {
-    top: 191%;
+    top: 200%;
     right: 24px;
   }
   .pos-4-rut {
-    top: 307%;
+    top: 316%;
     left: 35%;
+  }
+  .pos-4-bot {
+    top: 288%;
+    left: 58%;
+}
+  .pos-6-rut {
+    top: 543%;
+    left: 57%;
+  }
+  .pos-7-1 {
+   display: none;
   }
 }
 
 /* Estilos para pantallas grandes (769px - 1200px) */
 @media (min-width: 769px) and (max-width: 1200px) {
   .pos-5 {
-    bottom: 30%;
-    left: 55%;
+    bottom: 27%;
+  right: 58px;
   }
+  
   .titleM {
     padding-right: 7%;
   }
@@ -15441,9 +15522,9 @@ ul li.active a {
     right: 30px;
   }
   .pos-8-rut {
-    top: 58%;
-    right: 55%;
-    width: 17%;
+    top: 97%;
+    right: 28%;
+    width: 8%;
   }
   .pos-9-rut {
     top: 200%;
@@ -15456,7 +15537,7 @@ ul li.active a {
     width: 15%;
   }
   .pos-10-rut {
-    top: 290%;
+    top: 371%;
     right: 20%;
     width: 16%;
   }
@@ -15465,7 +15546,7 @@ ul li.active a {
     right: 40px;
   }
   .pos-4-rut {
-    top: 250%;
+    top: 349%;
     left: 40%;
   }
 }
