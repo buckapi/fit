@@ -15296,6 +15296,10 @@ ul li.active a {
   top: 44%;
   right: 30%;
 }
+.pos-5-ta {
+  top: 116%;
+  right: 38%;
+}
 .pos-6-bot {
   top: 158%;
   right: 24px;  
@@ -15315,7 +15319,7 @@ ul li.active a {
   left: 5%;
 }
 .pos-8-nut {
-  top: 263%;
+  top: 206%;
   left: 5%;
 }
 .pos-9-rut {
@@ -15327,6 +15331,36 @@ ul li.active a {
   top:238%;
   right: 28%;
   width: 8%;
+}
+.pos-9-ta {
+  top: 132%;
+  right: 51%;
+  width: 8%;
+}
+.pos-9-1-ta {
+  top: 132%;
+  right: 54%;
+  width: 8%;
+}
+.pos-9-ta {
+  top: 251%;
+  right: 72%;
+  width: 6%;
+}
+.pos-9-1-ta {
+  top: 251%;
+  right: 72%;
+  width: 6%;
+}
+.post-10-ta {
+  top: 251%;
+  right: 72%;
+  width: 6%;
+}
+.post-10-1-ta {
+  top: 251%;
+  right: 70%;
+  width: 6%;
 }
 .pos-10-rut {
   top: 371%;
@@ -15344,6 +15378,10 @@ ul li.active a {
 }
 .pos-4-bot {
   top: 300%;
+  left: 65%;
+}
+.pos-4-nut {
+  top: 335%;
   left: 65%;
 }
 .pos-6-rut {
@@ -15437,9 +15475,18 @@ ul li.active a {
   .titleR {
     padding-right: 5%;
   }
+  .pos-9-ta {
+    display: none;
+  }
+  .pos-9-1-ta {
+   display: none;
+  }
   .pos-5-rut {
     top: 40%;
     right: 24px;
+  }
+  .pos-5-ta {
+    display: none;
   }
   .pos-8-rut {
     top: 79%;
@@ -15447,6 +15494,11 @@ ul li.active a {
     width: 16%;
   }
   .pos-8-bot {
+    top: 102%;
+    left: 5%;
+    width: 20%;
+  }
+  .pos-8-nut {
     top: 102%;
     left: 5%;
     width: 20%;
@@ -15466,6 +15518,16 @@ ul li.active a {
     right: 58%;
     width: 14%;
   }
+  .pos-9-1-ta {
+    top: 130%;
+    right: 72%;
+    width: 8%;
+  }
+  .pos-9-ta {
+    top: 130%;
+    right: 62%;
+    width: 8%;
+  }
   .pos-10-rut {
     top: 334%;
     right: 24%;
@@ -15482,6 +15544,10 @@ ul li.active a {
   .pos-4-bot {
     top: 288%;
     left: 58%;
+}
+.pos-4-nut {
+  top: 231%;
+  left: 58%;
 }
   .pos-6-rut {
     top: 543%;
