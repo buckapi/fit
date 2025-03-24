@@ -15273,7 +15273,7 @@ ul li.active a {
 }
 
 .pos-7 {
-  top: 577%;
+  top: 573%;
   left: 31%;
   transform: translate(-50%, -50%);
 }
@@ -15667,7 +15667,7 @@ ul li.active a {
 /* --------------- Pantallas grandes (1201px+) --------------- */
 @media (min-width: 1201px) {
   /* Tus estilos actuales (min-width: 1024px) extendidos */
-  .pos-1 { top: 150%; right: 5%; }
+  .pos-1 { top: 180%; right: 5%; }
   .pos-5 { bottom: 45%; right: 58px; }
 }
 
