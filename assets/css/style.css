@@ -15222,8 +15222,6 @@ ul li.active a {
   }
 }
 
-/* Contenedor principal (ya lo tienes) */
-
 
 /* Clase base para las imágenes flotantes */
 .floating-image {
@@ -15231,6 +15229,7 @@ ul li.active a {
   position: absolute; /* Posicionamiento absoluto */
   z-index: 10; /* Asegura que las imágenes estén por encima de otros elementos */
 }
+
 .floating-image2 {
   width: 50px; /* Ancho de la imagen */
   position: absolute; /* Posicionamiento absoluto */
@@ -15258,14 +15257,15 @@ ul li.active a {
   bottom: 0;
   left: 0;
 }
-.titleM{
+
+.titleM {
   padding-right: 12%;
 }
+
 .pos-5 {
   bottom: 27%;
   right: 58px;
 }
-
 
 .pos-6 {
   top: 20%;
@@ -15277,6 +15277,7 @@ ul li.active a {
   left: 31%;
   transform: translate(-50%, -50%);
 }
+
 .pos-7-1 {
   top: 598%;
   left: 31%;
@@ -15290,20 +15291,24 @@ ul li.active a {
 
 .pos-5-bot {
   top: 44%;
-  right: 24px;  
+  right: 24px;
 }
+
 .pos-5-nut {
   top: 44%;
   right: 30%;
 }
+
 .pos-5-ta {
   top: 116%;
   right: 38%;
 }
+
 .pos-6-bot {
   top: 158%;
-  right: 24px;  
+  right: 24px;
 }
+
 .pos-6-nut {
   top: 117%;
   right: 24px;
@@ -15311,62 +15316,74 @@ ul li.active a {
 
 .pos-8-rut {
   top: 97%;
-    right: 28%;
-    width: 8%;
+  right: 28%;
+  width: 8%;
 }
+
 .pos-8-bot {
   top: 126%;
   left: 5%;
 }
+
 .pos-8-nut {
   top: 206%;
   left: 5%;
 }
+
 .pos-9-rut {
-  top: 238%;
+  top: 240%;
   right: 31%;
   width: 8%;
 }
+
 .pos-9-1-rut {
-  top:238%;
+  top:240%;
   right: 28%;
   width: 8%;
 }
+
 .pos-9-ta {
   top: 132%;
   right: 51%;
   width: 8%;
 }
+
 .pos-9-1-ta {
   top: 132%;
   right: 54%;
   width: 8%;
 }
+
 .pos-9-ta {
-  top: 251%;
-  right: 72%;
+  top: 253%;
+  right: 69%;
   width: 6%;
 }
+
 .pos-9-1-ta {
-  top: 251%;
+  top: 253%;
   right: 72%;
   width: 6%;
 }
+
 .post-10-ta {
   top: 251%;
   right: 72%;
   width: 6%;
 }
+
 .post-10-1-ta {
   top: 251%;
   right: 70%;
   width: 6%;
 }
+
 .pos-10-rut {
-  top: 371%;
+  top: 373%;
   right: 9%;
   width: 8%;
 }
+
 .pos-3-rut {
   top: 219%;
   right: 20%;
@@ -15376,92 +15393,138 @@ ul li.active a {
   top: 349%;
   left: 65%;
 }
+
 .pos-4-bot {
-  top: 300%;
+  top: 308%;
   left: 65%;
 }
+
 .pos-4-nut {
-  top: 335%;
+  top: 257%;
   left: 65%;
 }
+
 .pos-6-rut {
   top: 589%;
   left: 65%;
 }
 
-.titleR{
+.titleR {
   padding-right: 10%;
 }
-
-/* Estilos para pantallas pequeñas (0px - 480px) */
+/* Estilos para pantallas pequeñas (menores de 480px) */
 @media (max-width: 480px) {
   .pos-5 {
-    bottom: 40%;
+    bottom: 18%;
     left: 50%;
-  }
-  .titleM {
-    padding-right: 10%;
+    transform: translateX(-50%);
   }
   .pos-1 {
     top: 120%;
     left: 50%;
+    transform: translateX(-50%);
   }
   .pos-3 {
     top: 350%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
-  .pos-7 {
-    display: none;
+  .pos-4 {
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .titleR {
-    padding-right: 5%;
+  .pos-4-bot {
+    top: 370%;
+    left: 58%;
+    width: 25%;
+  }
+  .pos-4-nut {
+    top: 228%;
+    left: 58%;
+    width: 25%;
   }
   .pos-5-rut {
-    top: 30%;
-    right: 20px;
+    top: 51%;
+    right: 15px;
+  }
+  .pos-5-bot {
+    top: 50%;
+    right: 15px;
+  }
+  .pos-5-ta {
+    display: none;
+  }
+  .pos-6 {
+    top: 15%;
+    right: 10%;
+  }
+  .pos-6-bot {
+    top: 158%;
+    right: 24px;
+    width: 25%;
+  }
+  .pos-6-nut {
+    top: 135%;
+    left: 79%;
+    width: 25%;
   }
   .pos-8-rut {
-    top: 60%;
-    right: 50%;
-    width: 18%;
+    top: 95%;
+    right: 10%;
+    width: 25%;
+  }
+  .pos-8-bot {
+    top: 105%;
+    left: 5%;
+    width: 25%;
+  }
+  
+  .pos-8-nut {
+    top: 100%;
+    left: 5%;
+    width: 25%;
   }
   .pos-9-rut {
-    top: 180%;
-    right: 60%;
-    width: 16%;
+    top: 230%;
+    right: 25%;
+    width: 12%;
   }
   .pos-9-1-rut {
-    top: 180%;
-    right: 55%;
-    width: 15%;
+    top: 230%;
+    right: 22%;
+    width: 12%;
   }
   .pos-10-rut {
-    top: 280%;
-    right: 20%;
-    width: 16%;
+    top: 320%;
+    right: 5%;
+    width: 20%;
   }
   .pos-3-rut {
-    top: 170%;
-    right: 20px;
+    top: 180%;
+    right: 10%;
   }
   .pos-4-rut {
-    top: 270%;
-    left: 30%;
+    top: 250%;
+    left: 45%;
+  }
+  .pos-6-rut {
+    top: 450%;
+    left: 45%;
   }
 }
 
 /* Estilos para pantallas medianas (481px - 768px) */
 @media (max-width: 768px) {
   .pos-5 {
-    bottom: 35%;
+    bottom: 25%;
     left: 60%;
   }
   .titleM {
     padding-right: 5%;
   }
   .pos-1 {
-    top: 150%;
+    top: 180%;
     left: 63%;
   }
   .pos-3 {
@@ -15475,11 +15538,9 @@ ul li.active a {
   .titleR {
     padding-right: 5%;
   }
-  .pos-9-ta {
-    display: none;
-  }
+  .pos-9-ta,
   .pos-9-1-ta {
-   display: none;
+    display: none;
   }
   .pos-5-rut {
     top: 40%;
@@ -15489,12 +15550,12 @@ ul li.active a {
     display: none;
   }
   .pos-8-rut {
-    top: 79%;
-    right: 57%;
+    top: 74%;
+    right: 52%;
     width: 16%;
   }
   .pos-8-bot {
-    top: 102%;
+    top: 198%;
     left: 5%;
     width: 20%;
   }
@@ -15509,15 +15570,15 @@ ul li.active a {
     width: 20%;
   }
   .pos-9-rut {
-    top: 217%;
-    right: 63%;
-    width: 14%;
+    top: 230%;
+    right: 58%;
+    width: 12%;
   }
   .pos-9-1-rut {
-    top: 217%;
+    top: 230%;
     right: 58%;
     width: 14%;
-  }
+}
   .pos-9-1-ta {
     top: 130%;
     right: 72%;
@@ -15529,157 +15590,406 @@ ul li.active a {
     width: 8%;
   }
   .pos-10-rut {
-    top: 334%;
-    right: 24%;
-    width: 14%;
+    top: 343%;
+    right: 56%;
+    width: 12%;
   }
   .pos-3-rut {
-    top: 200%;
+    top: 212%;
     right: 24px;
+    width: 25%
   }
   .pos-4-rut {
-    top: 316%;
-    left: 35%;
+    top: 333%;
+    left: 62%;
+    width: 25%;
   }
   .pos-4-bot {
     top: 288%;
     left: 58%;
-}
-.pos-4-nut {
-  top: 231%;
-  left: 58%;
-}
+  }
+  .pos-4-nut {
+    top: 231%;
+    left: 58%;
+  }
   .pos-6-rut {
     top: 543%;
     left: 57%;
   }
   .pos-7-1 {
-   display: none;
+    display: none;
   }
 }
 
-/* Estilos para pantallas grandes (769px - 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
-  .pos-5 {
-    bottom: 27%;
-  right: 58px;
-  }
-  
-  .titleM {
-    padding-right: 7%;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
   .pos-1 {
-    top: 140%;
-    left: 60%;
+    top: 160%; /* Ajustado para pantallas medianas */
+    right: 6%;
   }
+
+  .pos-2 {
+    top: 0;
+    right: 0;
+  }
+
   .pos-3 {
-    top: 360%;
+    top: 370%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .pos-4 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .titleM {
+    padding-right: 8%;
+  }
+
+  .pos-5 {
+    bottom: 25%;
+    right: 55px;
+  }
+
+  .pos-6 {
+    top: 18%;
+    right: 12%;
+  }
+
   .pos-7 {
-    display: block;
+    top: 550%;
+    left: 33%;
+    transform: translate(-50%, -50%);
   }
-  .titleR {
-    padding-right: 10%;
+
+  .pos-7-1 {
+    top: 570%;
+    left: 33%;
+    transform: translate(-50%, -50%);
   }
+
   .pos-5-rut {
-    top: 28%;
-    right: 30px;
+    top: 22%;
+    right: 24px;
   }
+
+  .pos-5-bot {
+    top: 40%;
+    right: 24px;
+  }
+
+  .pos-5-nut {
+    top: 45%;
+    right: 30%;
+  }
+
+  .pos-5-ta {
+    top: 110%;
+    right: 38%;
+  }
+
+  .pos-6-bot {
+    top: 150%;
+    right: 24px;
+  }
+
+  .pos-6-nut {
+    top: 110%;
+    right: 24px;
+  }
+
   .pos-8-rut {
-    top: 97%;
-    right: 28%;
+    top: 80%;
+    right: 30%;
+    width: 9%;
+  }
+
+  .pos-8-bot {
+    top: 120%;
+    left: 5%;
+  }
+
+  .pos-8-nut {
+    top: 200%;
+    left: 5%;
+  }
+
+  .pos-9-rut {
+    top: 240%;
+    right: 33%;
+    width: 9%;
+  }
+
+  .pos-9-1-rut {
+    top: 240%;
+    right: 30%;
+    width: 9%;
+  }
+
+  .pos-9-ta {
+    top: 130%;
+    right: 50%;
     width: 8%;
   }
-  .pos-9-rut {
-    top: 200%;
-    right: 60%;
-    width: 15%;
+
+  .pos-9-1-ta {
+    top: 130%;
+    right: 52%;
+    width: 8%;
   }
-  .pos-9-1-rut {
-    top: 200%;
-    right: 50%;
-    width: 15%;
+
+  .pos-9-ta {
+    top: 250%;
+    right: 70%;
+    width: 6%;
   }
+
+  .pos-9-1-ta {
+    top: 250%;
+    right: 72%;
+    width: 6%;
+  }
+
+  .post-10-ta {
+    top: 250%;
+    right: 72%;
+    width: 6%;
+  }
+
+  .post-10-1-ta {
+    top: 250%;
+    right: 70%;
+    width: 6%;
+  }
+
   .pos-10-rut {
-    top: 371%;
-    right: 20%;
-    width: 16%;
+    top: 370%;
+    right: 10%;
+    width: 8%;
   }
+
   .pos-3-rut {
-    top: 160%;
-    right: 40px;
+    top: 210%;
+    right: 18%;
   }
+
   .pos-4-rut {
-    top: 349%;
-    left: 40%;
+    top: 340%;
+    left: 65%;
+  }
+
+  .pos-4-bot {
+    top: 290%;
+    left: 65%;
+  }
+
+  .pos-4-nut {
+    top: 330%;
+    left: 65%;
+  }
+
+  .pos-6-rut {
+    top: 580%;
+    left: 65%;
+  }
+
+  .titleR {
+    padding-right: 8%;
   }
 }
 
-
-
-/* @media (max-width: 768px) {
-  .pos-5 {
-    bottom: 35%;
-    left: 60%;
-  }
-  .titleM{
-    padding-right: 5%;
-  }
+/* Estilos para pantallas grandes (> 1024px) */
+@media (min-width: 1024px) {
   .pos-1 {
     top: 150%;
-    left: 63%;
+    right: 5%;
   }
+
+  .pos-2 {
+    top: 0;
+    right: 0;
+  }
+
   .pos-3 {
-    top: 379%;
+    top: 354%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
   }
-  .pos-7 {display: none;}
-  .titleR{
-    padding-right: 5%;
+
+  .pos-4 {
+    bottom: 0;
+    left: 0;
   }
+
+  .titleM {
+    padding-right: 12%;
+  }
+
+  .pos-5 {
+    bottom: 45%;
+    right: 58px;
+  }
+
+  .pos-6 {
+    top: 20%;
+    right: 10%;
+  }
+
+  .pos-7 {
+    top: 492%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pos-7-1 {
+    top: 490%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pos-7-bot {
+    top: 266%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+  .pos-7-nut {
+    top: 220%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+
   .pos-5-rut {
-    top: 34%;
+    top: 25%;
+    right: 159px;
+  }
+
+  .pos-5-bot {
+    top: 36%;
+    right: 165px;
+  }
+
+  .pos-5-nut {
+    top: 44%;
+    right: 30%;
+  }
+
+  .pos-5-ta {
+    top: 96%;
+        right: 55%;
+  }
+
+  .pos-6-bot {
+    top: 135%;
     right: 24px;
   }
-  .pos-8-rut {
-    top: 64%;
-    right: 59%;
-    width: 15%;
-  }
-  .pos-9-rut {
-  top: 190%;
-  right: 65%;
-  width: 14%;
-  }
-    .pos-9-rut {
-    top: 190%;
-    right: 63%;
-    width: 14%;
-    }
 
-    .pos-9-1-rut {
-      top: 190%;
-      right: 58%;
-      width: 14%;
-      }
-    
-    .pos-10-rut {
-      top: 294%;
-        right: 26%;
-        width: 14%;
-    }
-    .pos-3-rut {
-      top: 177%;
-      right: 24px;
+  .pos-6-nut {
+    top: 117%;
+    right: 24px;
   }
+
+  .pos-8-rut {
+    top: 78%;
+    right: 28%;
+    width: 8%;
+  }
+
+  .pos-8-bot {
+    top: 105%;
+    left: 5%;
+  }
+
+  .pos-8-nut {
+    top: 165%;
+    left: 5%;
+  }
+
+  .pos-9-rut {
+    top: 195%;
+    right: 31%;
+    width: 8%;
+  }
+
+  .pos-9-1-rut {
+    top: 195%;
+    right: 28%;
+    width: 8%;
+  }
+
+  .pos-9-ta {
+    top: 132%;
+    right: 51%;
+    width: 8%;
+  }
+
+  .pos-9-1-ta {
+    top: 132%;
+    right: 54%;
+    width: 8%;
+  }
+
+  .pos-9-ta {
+    top: 216%;
+    right: 69%;
+    width: 4%;
+  }
+
+  .pos-9-1-ta {
+    top: 216%;
+    right: 72%;
+    width: 4%;
+  }
+  .pos-91-ta {
+    top: 112%;
+    right: 69%;
+    width: 4%;
+  }
+
+  .pos-91-1-ta {
+    top: 112%;
+    right: 72%;
+    width: 4%;
+  }
+
+ 
+
+  .pos-10-rut {
+    top: 303%;
+    right: 9%;
+    width: 8%;
+  }
+
+  .pos-3-rut {
+    top: 180%;
+    right: 20%;
+  }
+
   .pos-4-rut {
-    top: 278%;
-    left: 35%;
+    top: 286%;
+    left: 65%;
   }
-} */
+
+  .pos-4-bot {
+    top: 258%;
+    left: 65%;
+  }
+
+  .pos-4-nut {
+    top: 215%;
+    left: 65%;
+  }
+
+  .pos-6-rut {
+    top: 485%;
+    left: 65%;
+  }
+
+  .titleR {
+    padding-right: 10%;
+  }
+}
+
 
 
 
