@@ -15343,24 +15343,24 @@ ul li.active a {
 }
 
 .pos-9-ta {
-  top: 132%;
-  right: 51%;
-  width: 8%;
+  top: 131%;
+  right: 64%;
+  width: 6%;
 }
 
 .pos-9-1-ta {
-  top: 132%;
-  right: 54%;
-  width: 8%;
+  top: 131%;
+  right: 66%;
+  width: 6%;
 }
 
-.pos-9-ta {
+.pos-91-ta {
   top: 253%;
   right: 69%;
   width: 6%;
 }
 
-.pos-9-1-ta {
+.pos-91-1-ta {
   top: 253%;
   right: 72%;
   width: 6%;
@@ -15684,19 +15684,6 @@ ul li.active a {
   .pos-9-ta { display: none; }
 }
 
-/* --------------- Laptops (1025px - 1200px) --------------- */
-@media (min-width: 1025px) and (max-width: 1200px) {
-  /* Ajustes para pantallas HD */
-  .pos-5 { bottom: 40%; right: 70px; }
-  .titleR { padding-right: 8%; }
-}
-
-/* --------------- Pantallas grandes (1201px+) --------------- */
-@media (min-width: 1201px) {
-  /* Tus estilos actuales (min-width: 1024px) extendidos */
-  .pos-1 { top: 180%; right: 5%; }
-  .pos-5 { bottom: 45%; right: 58px; }
-}
 
 
 
