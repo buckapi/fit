@@ -15551,7 +15551,7 @@ ul li.active a {
      transform: translateX(-50%);
    }
    .pos-4-bot {
-     top: 370%;
+     top: 240%;
      left: 58%;
      width: 25%;
    }
@@ -15576,7 +15576,7 @@ ul li.active a {
      right: 10%;
    }
    .pos-6-bot {
-     top: 158%;
+     top: 127%;
      right: 24px;
      width: 25%;
    }
@@ -15591,7 +15591,7 @@ ul li.active a {
      width: 25%;
    }
    .pos-8-bot {
-     top: 105%;
+     top: 95%;
      left: 5%;
      width: 25%;
    }
@@ -15623,10 +15623,12 @@ ul li.active a {
    .pos-4-rut {
      top: 270%;
      left: 45%;
+     width: 25%;
    }
    .pos-6-rut {
-     top: 450%;
+     top: 463%;
      left: 45%;
+     width: 25%;
    }
    .pos-5-ta { display: none; }
 }
