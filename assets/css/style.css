@@ -15529,6 +15529,8 @@ ul li.active a {
    /* Tus estilos para móviles muy pequeños (ej: iPhone 5/SE) */
    .pos-7 { display: none; }
    .pos-7-1 { display: none; }
+   .pos-9-1-ta { display: none; }
+   .pos-9-ta { display: none; }
    .pos-5 {
      bottom: 15%;
      left: 50%;
@@ -15581,7 +15583,7 @@ ul li.active a {
      width: 25%;
    }
    .pos-6-nut {
-    top: 460%;
+    top: 208%;
     right: 50%;
      width: 25%;
    }
