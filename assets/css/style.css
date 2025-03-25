@@ -15520,24 +15520,26 @@ ul li.active a {
     top: 450%;
     left: 45%;
   }
+  .pos-7 { display: none; }
+
 }
 
 /* --------------- Móviles estándar (hasta 480px) --------------- */
 @media (max-width: 480px) {
    /* Tus estilos para móviles muy pequeños (ej: iPhone 5/SE) */
-   
+   .pos-7 { display: none; }
    .pos-5 {
      bottom: 15%;
      left: 50%;
      transform: translateX(-50%);
    }
    .pos-1 {
-     top: 208%;
+     top: 160%;
      left: 50%;
      transform: translateX(-50%);
    }
    .pos-3 {
-     top: 480%;
+     top: 395%;
      left: 50%;
      transform: translateX(-50%);
      width: 25%;
@@ -15633,6 +15635,15 @@ ul li.active a {
   /* Añade ajustes específicos para tablets pequeñas en landscape */
   .pos-5 { bottom: 22%; left: 55%; }
   .pos-8-rut { width: 20%; }
+  .pos-7 { display: none; }
+  @media (max-width: 480px) {
+    .pos-3 {
+        top: 395%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25%;
+    }
+  }
 }
 
 /* --------------- Tablets medianas (601px - 768px) --------------- */
@@ -15641,6 +15652,14 @@ ul li.active a {
   .pos-5 { bottom: 25%; left: 60%; }
   .titleM { padding-right: 5%; }
   .pos-7 { display: none; }
+  @media (max-width: 480px) {
+    .pos-3 {
+        top: 395%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25%;
+    }
+  }
 }
 
 /* --------------- Tablets grandes (769px - 900px) --------------- */
