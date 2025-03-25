@@ -15478,7 +15478,7 @@ ul li.active a {
     width: 25%;
   }
   .pos-8-rut {
-    top: 95%;
+    top: 65%;
     right: 10%;
     width: 25%;
   }
@@ -15528,6 +15528,7 @@ ul li.active a {
 @media (max-width: 480px) {
    /* Tus estilos para móviles muy pequeños (ej: iPhone 5/SE) */
    .pos-7 { display: none; }
+   .pos-7-1 { display: none; }
    .pos-5 {
      bottom: 15%;
      left: 50%;
@@ -15580,13 +15581,13 @@ ul li.active a {
      width: 25%;
    }
    .pos-6-nut {
-     top: 135%;
-     left: 79%;
+    top: 460%;
+    right: 50%;
      width: 25%;
    }
    .pos-8-rut {
-     top: 95%;
-     right: 10%;
+    top: 66%;
+    right: 50%;
      width: 25%;
    }
    .pos-8-bot {
@@ -15601,18 +15602,18 @@ ul li.active a {
      width: 25%;
    }
    .pos-9-rut {
-     top: 230%;
-     right: 25%;
+    top: 188%;
+    right: 58%;
      width: 12%;
    }
    .pos-9-1-rut {
-     top: 230%;
-     right: 22%;
+    top: 188%;
+    right: 63%;
      width: 12%;
    }
    .pos-10-rut {
-     top: 320%;
-     right: 5%;
+    top: 281%;
+    right: 23%;
      width: 20%;
    }
    .pos-3-rut {
@@ -15620,7 +15621,7 @@ ul li.active a {
      right: 10%;
    }
    .pos-4-rut {
-     top: 250%;
+     top: 270%;
      left: 45%;
    }
    .pos-6-rut {
@@ -15634,7 +15635,10 @@ ul li.active a {
 @media (min-width: 481px) and (max-width: 600px) {
   /* Añade ajustes específicos para tablets pequeñas en landscape */
   .pos-5 { bottom: 22%; left: 55%; }
-  .pos-8-rut { width: 20%; }
+  .pos-8-rut {  top: 95%;
+    right: 10%;
+    width: 25%;
+  }
   .pos-7 { display: none; }
   @media (max-width: 480px) {
     .pos-3 {
